@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Ride - Ride Sharing App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ride Sharing App</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offer.html">Offer Ride</a></li>
+          <li><a href="search.html">Search Ride</a></li>
+          <li><a href="chat.html">Chat</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Search for a Ride</h2>
+        <form id="searchForm">
+          <label for="searchCheckpoint">Enter Checkpoint:</label>
+          <input
+            type="text"
+            id="searchCheckpoint"
+            name="searchCheckpoint"
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+        <div id="rideResults"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
